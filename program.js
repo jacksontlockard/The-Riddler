@@ -1,13 +1,13 @@
-const riddle = "What do you call a 100-year-old ant?";
-const riddleAnswer = "An antique";
+var riddles = ["What do you call a 100-year-old ant?", "What goes up when the rain comes down?", "I have a head and a tail but no body... What am I?"];
+var riddleAnswers = ["An antique", "An umbrella", "A coin"];
 
 function clicked() {
-  var userAnswer = prompt(riddle);
+  var userAnswer = prompt(riddles[0]);
 
-  if (riddleAnswer.toLowerCase() == userAnswer.toLowerCase()) {
+  if (riddleAnswers[0].toLowerCase() == userAnswer.toLowerCase()) {
     correct();
   } else {
-    incorrect(riddleAnswer);
+    incorrect(riddleAnswers[0]);
   }
 }
 
