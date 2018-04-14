@@ -1,11 +1,14 @@
 const riddle = "What do you call a 100-year-old ant?";
 const riddleAnswer = "An antique";
-var userAnswer = prompt(riddle);
 
-if (riddleAnswer.toLowerCase() == userAnswer.toLowerCase()) {
-  correct();
-} else {
-  incorrect(riddleAnswer);
+function clicked() {
+  var userAnswer = prompt(riddle);
+
+  if (riddleAnswer.toLowerCase() == userAnswer.toLowerCase()) {
+    correct();
+  } else {
+    incorrect(riddleAnswer);
+  }
 }
 
 function correct() {
